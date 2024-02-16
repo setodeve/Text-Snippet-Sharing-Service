@@ -44,5 +44,7 @@ if (isset($routes[$path])) {
 } else {
     // マッチするルートがない場合、404エラーを表示します。
     http_response_code(404);
-    echo "404 Not Found: The requested route was not found on this server.";
+    header("Location: 404");
 }
+
+?>
